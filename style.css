@@ -1,0 +1,67 @@
+nav{
+    background-image: url(./images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100%;
+}
+#headJumbo img {
+    height: 200px;
+    width: 150px;
+display: inline;
+}
+#headJumbo {
+
+    color:whitesmoke;
+    font-family:'Times New Roman', Times, serif;
+    
+}
+.jumbotron {
+    background-color: aquamarine;
+    box-shadow: 1px 1px 5px gray;
+    background-image: url('./images/abstract-coding-interface-with-glowing-digital-lines-dark-background-information-network-security-concept-3d-rendering_670147-2079.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 2rem;
+}
+#headJumbo h1 {
+    font-size: 4rem;
+}
+#headJumbo h3 {
+    font-size: 2.2rem;
+}
+#skills {
+    font-size: 2rem;
+    margin: auto;
+    color: black;
+    margin: 10px;
+    text-align: center;
+    width: 100%;
+    margin-left: 6.25rem;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 450;
+}
+
+
+.social-icons {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
+    color: #008000;
+}
+.fab {
+    color: #000000;
+}
+
+
+/* footer styling */
+#footer {
+    background-color: #808080;
+    text-align: center;
+    height: fit-content;
+
+}
+
+
