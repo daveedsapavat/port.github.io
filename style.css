@@ -31,13 +31,14 @@ display: inline;
     font-size: 2.2rem;
 }
 #skills {
+    align-items: auto;
     font-size: 2rem;
     margin: auto;
     color: black;
     margin: 10px;
-    text-align: center;
+    text-align: start;
     width: 100%;
-    margin-left: 6.25rem;
+    margin-left: 2px;
     font-family:'Times New Roman', Times, serif;
     font-weight: 450;
 }
