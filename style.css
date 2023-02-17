@@ -10,7 +10,7 @@ nav{
     width: 150px;
 display: inline;
 }
-#headJumbo {
+card {
 
     color:whitesmoke;
     font-family:'Times New Roman', Times, serif;
@@ -31,6 +31,7 @@ display: inline;
     font-size: 2.2rem;
 }
 #skills {
+    background-color: beige;
     align-items: auto;
     font-size: 2rem;
     margin: auto;
@@ -38,7 +39,7 @@ display: inline;
     margin: 10px;
     text-align: start;
     width: 100%;
-    margin-left: 2px;
+    margin-left: 1.7px;
     font-family:'Times New Roman', Times, serif;
     font-weight: 450;
 }
