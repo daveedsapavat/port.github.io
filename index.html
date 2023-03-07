@@ -13,6 +13,13 @@
     <title>Portfolio</title>
     <!--My css-->
     <link rel="stylesheet" href="./style.css">
+    <style>
+      a:hover{
+        color:brown;
+      }
+      
+    </style>
+    
 </head>
 
 
@@ -20,9 +27,9 @@
 
 <!-- Navbar Component -->
 <nav class="navbar navbar-expand-lg  navbar-light bg-danger">
-  <div class="container">
+  <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img src="./images/portfolio.jpg" alt="My Portfolio">
+      <img src="./images/portfolio.jpg" class="pl-0" alt="My Portfolio">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
      <span class="navbar-toggler-icon"></span>
@@ -40,7 +47,7 @@
     <a class="nav-link font-weight-bold text-white" href="#">Project</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link font-weight-bold text-white" href="./certificates.html">Certificates</a>
+          <a class="nav-link font-weight-bold text-white"  href="./certificates.html">Certificates</a>
                 </li>
         <li class="nav-item">
   <a class="nav-link font-weight-bold text-white" href="#">Contact Me</a>
@@ -53,10 +60,11 @@
     </div>
     </div>
   </nav>
+  <br>
  <!-- Navbar Component closed -->
 
 
-<!--jumbotron-->
+<!--cards section-->
 <div class="card mb-3" style="background-color: antiquewhite;">
   <div class="row p-5">
     <div class="col-md-8">
@@ -75,7 +83,7 @@
 
 <!-- about section-->
 <div class="jumbotron sm-4 md-8 bg-white">
-  <h1 class="text-center bg-warning pt-2">About Me</h1>
+  <h1 class="text-center bg-warning pt-0">About Me</h1>
   <h5 class="card-text">Hello! Im Daveed,I had completed masters from <a href="https://www.osmania.ac.in/" target="_blank">Osmania University</a></h5>
   <h5 class="text-title">I have some skills like  
       <h5><span class="badge bg-secondary">JAVA</span></h5>
@@ -97,7 +105,7 @@
 </div>
 
 <!--Skills Section-->
-  <div class="mb-5 mt-5" id="skills">
+  <div class="container-fluid mb-5 mt-5 text-center" id="skills">
     <div class="row card-text">
       <div class="col">
         <i class="fa-brands fa-java"></i>
@@ -128,7 +136,7 @@
     <h6>React</h6>
     </div>
     <div class="col">
-      <i class="fa-brands fa-sql"></i>
+      <i class="fa-brands fa-database"></i>
       <h6>SQL</h6>
       </div>
     </div>
