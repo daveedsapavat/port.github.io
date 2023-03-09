@@ -19,17 +19,14 @@
       }
       
     </style>
-    <script>
-      window.alert("Welcome To My Portfolio");
-    </script>
-
+    
 </head>
 
 
 <body class="container-fluid">
 
 <!-- Navbar Component -->
-<nav class="navbar navbar-expand-lg  navbar-light bg-danger">
+<nav class="navbar navbar-expand-lg  navbar-light bg-danger sticky-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
       <img src="./images/portfolio.jpg" class="pl-0" alt="My Portfolio">
@@ -56,8 +53,13 @@
   <a class="nav-link font-weight-bold text-primary" href="#">Contact Me</a>
         </li>
       </ul>
+      <script>
+        function dash(){
+          window.alert("Type Here To Search In Page");
+        }
+      </script>
       <form class="d-flex  " role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" onmouseover="dash()">
         <button class="btn btn-outline-success btn-warning btn-close-red" type="submit">Search</button>
       </form>
     </div>
@@ -74,6 +76,10 @@
       <div class="card-body text-center " style="background-color: aliceblue;">
         <h1 class="card-title font-italic">Daveed Sapavat</h1>
         <h3 class="card-text font-italic">Junior Java Full Stack Developer</h3>
+
+      </div>
+      <div>
+        <p>hgghjjglujh,gvgh</p>
       </div>
     </div>
     <br>
@@ -88,8 +94,8 @@
 <!-- about section-->
 <div class="jumbotron sm-4 md-8 bg-white">
   <h1 class="text-center bg-warning pt-0">About Me</h1>
-  <h5 class="card-text">Hello! Im Daveed,I had completed masters from <a href="https://www.osmania.ac.in/" target="_blank">Osmania University</a></h5>
-  <h5 class="text-title">I have some skills like  
+  <h5 class="card-text">Hello!,I had completed masters from <a href="https://www.osmania.ac.in/" target="_blank">Osmania University</a></h5>
+  <h5 class="text-title">MY  skills are :
       <h5><span class="badge bg-secondary">JAVA</span></h5>
       <h5><span class="badge bg-secondary">HTML</span></h5>
       <h4><span class="badge bg-secondary">CSS</span></h5>
@@ -112,14 +118,14 @@
 
 <!--Skills Section-->
   <div class="container-fluid mb-5 mt-5 text-center" id="skills">
-    <div class="row card-text">
+    <div class="row card-text" >
       <div class="col">
-        <i class="fa-brands fa-java"></i>
+        <i class="fa-brands fa-java" ></i>
         <h6>Java</h6>
       </div>
       <div class="col">
         <i class="fa-brands fa-html5"></i>
-        <h6><a href="images/Html.png">HTML</a></h6>
+        <h6><a href="images/Html.png" target="_blank">HTML</a></h6>
       </div>
       <div class="col">
         <i class="fa-brands fa-github"></i>
@@ -173,16 +179,39 @@
       
           <div class="col-lg-6">
               <!-- form fields -->
-              <form>
-                  <input type="text" class="form-control form-control-lg" placeholder="Name" required>
-                  <input type="email" class="form-control mt-3" placeholder="Email" required>
-                  <input type="text" class="form-control mt-3" placeholder="Subject" required>
+              <form id="my-form" method="post">
+                  <input type="text" class="form-control form-control-lg" placeholder="Name" id="name" required />
+                  <input type="email" class="form-control mt-3" placeholder="Email" id="email" required />
+                  <input type="text" class="form-control mt-3" placeholder="Subject" required />
+                  <input type="number" class="form-control mt-3" placeholder="mobile" id="mobile" required />
                   <div class="mb-3 mt-3">
                       <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Purpose"></textarea>
                   </div>
               </form>
+
               <script>
                 function fun(){
+                  const requiredFields = document.querySelectorAll('input[required]');
+                  const name = document.getElementById("name").value;
+                    const email = document.getElementById("email").value;
+                     const mobile = document.getElementById("mobile").value;
+                     
+                     if (name === "") {
+                          alert("Name must be filled out");
+                          return false;
+                         }
+  
+                      // Validate email
+                   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                       
+                   if (!emailRegex.test(email)) {
+                          alert("Invalid email address");
+                           return false;
+                              }
+                              
+  
+                  const form = document.getElementById('my-form');
+                        form.action = '/submit-form';
                   window.alert("Are you sure want to submit? will be contact you within one day");
                 }
               </script>
